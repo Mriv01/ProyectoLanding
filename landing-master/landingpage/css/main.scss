@@ -1,0 +1,46 @@
+$orange:#ff4800;
+
+header{
+    width: 100%;
+    height:70px;
+    background:$orange;
+    a{
+        text-decoration:none;
+        margin:0px 20px;
+        color:white;
+    }
+    .btn{
+        border-radius:0px;
+    }   
+}
+
+.banner-wrapper{
+    background-image:url("https://picsum.photos/600/350");
+    background-size:cover;
+    height:calc(100vh - 126px);
+    .button-wrapper{
+        .btn{
+            border-radius:50px;
+        }
+        .btn-danger{
+            background:$orange;
+            border:1px solid $orange;
+            &:hover{
+                background:none;
+                color:$orange;
+                cursor:pointer;
+            }
+        }
+        .btn-outline-danger{
+            border-color:$orange;
+            color:$orange;
+            &:hover{
+                background:$orange;
+                color:white;
+                cursor:pointer;
+            }
+        }
+    }
+}
+
+
